@@ -7,6 +7,7 @@
     <title>KIKO Bookstore</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script src="sripts/template.js" defer></script>
     <link rel="icon" href="favicon.png" type="image/png">
 </head>
 
@@ -18,47 +19,7 @@
 
     </header>
 
-    <main>
-        <div>
-            <h2 class="book_title">Buchtitel</h2>
-            <hr>
-            <img src="./img/white_wolf_book.svg" alt="Buchcover mit weißem Wolf" class="img_book_cover">
-            <hr>
-            <table>
-                <tr>
-                  <th>Price</th>
-                  <td>19,99 €</td>
-                </tr>
-                <tr>
-                  <th>Author</th>
-                  <td>Charlotte Picon</td>
-                </tr>
-                <tr>
-                  <th>Year</th>
-                  <td>2024</td>
-                </tr>
-                <tr>
-                  <th>Genre</th>
-                  <td>Fantasy</td>
-                </tr>
-              </table>
-            <hr>
-            <ul id="commentList" class="user_comments">
-                <p><strong>Anna:</strong> Ein spannendes Buch, der Weiße Wolf hat mich von Anfang an gefesselt.</p>
-                <br>
-                <p><strong>Jonas:</strong> Sehr gut geschrieben, die Geschichte vom Weißen Wolf bleibt im Kopf.</p>
-            </ul>
-            <hr>
-        </div>
-        <form id="commentForm">
-            <label for="comments">Kommentar:</label<br>
-                <div class="btn_beside_comment">
-                    <textarea id="comments" name="comment_book" rows="1" required
-                        placeholder="write your comment ♥️"></textarea><br>
-                    <button type="submit" class="send_btn">➤</button>
-                </div>
-        </form>
-    </main>
+    <main id="book-list"></main>
 
     <footer class="footer">
         <p>&copy; 2025 Maya Hamdy |

@@ -101,7 +101,7 @@ hr {
 table th {
   color: #bb8740;
   font-family: "Noto_Sans_Pau_Cin_Hau";
-  width: auto;
+  width: 80px;
   text-align: left;
   padding-left: 10px;
 }
@@ -112,16 +112,8 @@ table td {
   width: auto;
   text-align: left;
   padding-left: 10px;
+  overflow-wrap: anywhere;
 }
-
-.user_comments {
-  color: #e3ecf7;
-  font-family: "Noto_Sans_Pau_Cin_Hau";
-  padding: 10px;
-  font-size: 14px;
-  font-weight: 100;
-}
-
 
 label {
   color: #bb8740;
