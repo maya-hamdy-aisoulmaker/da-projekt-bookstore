@@ -1,9 +1,9 @@
 function render() {
-    document.getElementById("book-list").innerHTML = getBookListTemplate();
-  }
+  document.getElementById("book-list").innerHTML = getBookListTemplate();
+}
 
 function getBookListTemplate() {
-    return `
+  return `
       <div>
 <h2 class="book_title">Buchtitel</h2>
 <hr>
@@ -28,24 +28,23 @@ function getBookListTemplate() {
     </tr>
 </table>
 <hr>
-
-
-
-<table>
-  <tr>
-    <th>Anna</th>
-    <td>Ein spannendes Buch …</td>
-  </tr>
-  <tr>
-    <th>Jonas</th>
-    <td>Sehr gut geschrieben …</td>
-  </tr>
-</table>
-<hr>
+<h3 class="title_comment_area">Kommentare</h3>
+<div class="comments_scroll">
+  <table class="comments_table">
+    <tr>
+      <th>Leser 1:</th>
+      <td>Ein spannendes Buch … hat mich richtig gepackt ... würde ich immer wieder lesen! Klare Herzensempfehlung!</td>
+    </tr>
+    <tr>
+      <th>Leser 2:</th>
+      <td>Sehr gut geschrieben … vielleicht ist die Story etwas zu kitschig, aber die meisten Menschen scheinen das zu lieben.</td>
+    </tr>
+  </table>
+</div>
 </div>
 <form>
   <label>
-    Kommentar:<br>
+    <br>
     <div class="btn_beside_comment">
       <textarea name="comment_book" rows="1" required
         placeholder="write your comment ♥️"></textarea><br>
@@ -54,14 +53,4 @@ function getBookListTemplate() {
   </label>
 </form>
     `;
-  }
-
-
-
-
-
-
-
-
-
-
+}
