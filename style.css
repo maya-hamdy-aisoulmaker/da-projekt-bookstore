@@ -64,26 +64,33 @@ h1 {
 }
 main {
   width: 250px;
-  height: 400px;
+  height: auto;
   margin-top: 70px;
   margin-left: 100px;
-  border-radius:8px;
-  background-color:rgb(28, 60, 88);
+  border-radius: 8px;
+  background-color: rgb(28, 60, 88);
+
+  display: flex;
+  flex-direction: column;     
+  justify-content: space-between; 
 }
 
 .book_title {
   color: #e3ecf7;
-  font-family: "Noto_Sans_Pau_Cin_Hau";
+  font-family: Cinzel;
   padding: 10px;
 }
 
 .img_book_cover {
-  max-width:120px;
+  max-width: 120px;
   width: 100%;
   height: auto;
   border-radius: 8px;
   margin: 0.5rem;
-  border:1px solid #bb8740;
+  border: 1px solid #bb8740;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 hr {
@@ -91,35 +98,64 @@ hr {
   margin-bottom: 5px;
 }
 
-label{
+table th {
   color: #bb8740;
   font-family: "Noto_Sans_Pau_Cin_Hau";
+  width: auto;
+  text-align: left;
+  padding-left: 10px;
+}
+
+table td {
+  color: #e3ecf7;
+  font-family: "Noto_Sans_Pau_Cin_Hau";
+  width: auto;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.user_comments {
+  color: #e3ecf7;
+  font-family: "Noto_Sans_Pau_Cin_Hau";
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+
+label {
+  color: #bb8740;
+  font-family: Cinzel;
   padding: 10px;
 }
 
 textarea {
-  width: calc(100% - 60px);    
+  width: calc(100% - 60px);
   margin: 0.5rem 10px;
   padding: 5px;
   background-color: #1e2a38;
   color: #e3ecf7;
   font-family: "Noto_Sans_Pau_Cin_Hau";
-  border-color: #bb8740;;
+  border-color: #bb8740;
 }
 
 .send_btn {
- background-color: #1e2a38;
-cursor: pointer;
+  background-color: #1e2a38;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-color: #bb8740;
 }
 
-.send_btn:hover{
+.send_btn:hover {
   color: #bb8740;
 }
 
-.btn_beside_comment{
-display: flex;
-justify-content: flex-start;
-align-items: center;
+.btn_beside_comment {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
 }
 
 .footer {
