@@ -57,6 +57,7 @@ header {
   flex: 0 0 auto;
   align-self: stretch;
   max-width: none;
+  justify-content: center;
 }
 
 .logo {
