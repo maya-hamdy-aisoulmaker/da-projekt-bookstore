@@ -9,7 +9,7 @@ function getBookListTemplate() {
 <hr>
 <img src="./img/white_wolf_book.svg" alt="Buchcover mit weißem Wolf" class="img_book_cover">
 <hr>
-<table>
+<table class="info_table">
     <tr>
         <th>Price</th>
         <td>19,99 €</td>
@@ -56,7 +56,7 @@ function getBookListTemplate() {
     <br>
     <div class="btn_beside_comment">
       <textarea name="comment_book" rows="1" required
-        placeholder="write your comment ♥️"></textarea><br>
+        placeholder="write your comment"></textarea><br>
       <button type="submit" class="send_btn">➤</button>
     </div>
   </label>
