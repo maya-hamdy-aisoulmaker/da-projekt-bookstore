@@ -110,6 +110,11 @@ table th {
   vertical-align: top;
 }
 
+table th:nth-child(3) {
+  text-align: right;
+}
+
+
 table td {
   color: #e3ecf7;
   font-family: "Noto_Sans_Pau_Cin_Hau";
@@ -119,6 +124,29 @@ table td {
   padding-bottom: 12px;
   overflow-wrap: anywhere;
 }
+
+.heart {
+cursor: pointer;
+border: none;
+background-color: transparent;
+display: inline-flex;
+align-items: center;
+gap: 8px;
+}
+
+.heart svg {
+width: 26px;
+height: 26px; 
+fill:none;
+stroke:red;
+stroke-width: 1.5;
+}
+
+.likes-number {
+  color:#e3ecf7;
+  font-family: "Noto_Sans_Pau_Cin_Hau";
+}
+
 
 .title_comment_area {
   color: #bb8740;
@@ -144,8 +172,8 @@ table td {
 }
 
 .comments_scroll::-webkit-scrollbar-thumb {
-  background: #1e2a38;
-  border-radius: 10px;
+  background:#bb8740;
+  border-radius: 8px;
 }
 
 textarea {
@@ -165,10 +193,11 @@ textarea {
   width: 30px;
   height: 30px;
   border-color: #bb8740;
+  color: #bb8740;
 }
 
 .send_btn:hover {
-  color: #bb8740;
+  color: whitesmoke;
 }
 
 .btn_beside_comment {

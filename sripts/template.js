@@ -13,7 +13,16 @@ function getBookListTemplate() {
     <tr>
         <th>Price</th>
         <td>19,99 €</td>
-    </tr>
+<th>
+
+<button class="heart">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <path d="M12 21s-6-4.35-9-8.28C-1.5 7.5 4.5 3 8.57 6.33L12 9.2l3.43-2.87C19.5 3 25.5 7.5 21 12.72 18 16.65 12 21 12 21z"/>
+</svg>
+<span class="likes-number">3583</span>
+</button>
+</th>    
+</tr>
     <tr>
         <th>Author</th>
         <td>Charlotte Picon</td>
@@ -37,7 +46,7 @@ function getBookListTemplate() {
     </tr>
     <tr>
       <th>Leser 2:</th>
-      <td>Sehr gut geschrieben … vielleicht ist die Story etwas zu kitschig, aber die meisten Menschen scheinen das zu lieben.</td>
+      <td>Sehr gut geschrieben … ich fühlte mich in den Roman hineingezogen und konnte das Buch nicht mehr aus den Händen legen.</td>
     </tr>
   </table>
 </div>
